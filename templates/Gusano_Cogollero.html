@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="XD">
+	
+	<title>Detección deplagas</title>
+
+	<link rel="shortcut icon" href="https://previews.123rf.com/images/rogistok/rogistok1803/rogistok180300053/98414904-s%C3%ADmbolo-de-icono-de-control-de-plagas-de-cucarachas.jpg">
+	
+	<!-- Bootstrap itself -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='magister.css') }}">
+
+	<!-- Fonts -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- use "theme-invert" class on bright backgrounds, also try "text-shadows" class -->
+<body class="theme-invert">
+
+<!-- Main (Home) section -->
+<section class="section" id="head">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">	
+
+				<!-- Plaga y subtitulo -->
+				<h1 class="title">Gusano Cogollero</h1>
+				<h2 class="subtitle">Insecticcida recomendado: clorantraniliprol</h2>
+
+				<!-- Recomendaciones para evitar la plaga -->
+				<h3 class="tagline">
+					Las orugas se alimentan de las plantas formando orificios de tipo perdigonada en 
+                    las hojas; además las dejan esqueletizadas y causan que los tallos mueran a 
+                    partir de los extremos. En casos severos las parcelas son invadidas por 
+                    grandes enjambres que pueden devastar la cosecha durante una noche, de forma 
+                    similar a como lo haría el ganado. Los gusanos soldado del arroz dañan las 
+                    cosechas de arroz cortando las puntas de las hojas, los márgenes de las hojas 
+                    e, incluso, la base de las plantas.
+				</h3>
+				
+				<!-- 	URl de la imagen de plaga -->
+				<p><img src="data:image/jpeg;base64,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" alt=""></p>
+	
+			</div> <!-- /col -->
+		</div> <!-- /row -->
+	
+	</div>
+</section>
